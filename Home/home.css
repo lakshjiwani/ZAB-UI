@@ -64,6 +64,7 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     position: relative;
+    font-weight: 500;
 }
 
 .navbar li a:hover{
@@ -98,21 +99,17 @@ body{
 
 .navbar ul li ul{
     position: absolute;
-    left: 0;
-    width: 200px;
+    top: 21.7%;
+    width: 15%;
     background-color: #fff;
+    z-index: 1000;
+    display: none;
 
 }
 
-.navbar ul li .dropdown{
-    position: absolute;
-    top: 135px;
-    left: 78px;
-    width: 100px;
-    background-color: #ffffff;
-    display: none;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
-    z-index: 1000;
+.navbar ul li ul li{
+    width: 100%;
+    border-top: black;
 }
 
 .navbar ul li ul a{
