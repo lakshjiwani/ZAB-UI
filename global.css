@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+    font-family: 'segoe UI';
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    left: 0;
+}
+
+
+.logo .zabdesk{
+    width: 10%;
+    height: 20%;
+    margin: 1.3% 0 0 1%;
+    cursor: pointer;
+}
+
+.logo .person{
+    width: 4%;
+    height: 4%;
+    margin: 1.3% 1% 0 60%;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.home, .sign-out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 2% 0 1% 1%;
+    background-color: rgb(214, 228, 228);
+    color: black;
+    width: 8%;
+    height: 45px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.home:hover, .sign-out:hover{
+    background-color: rgb(174, 189, 189);
+}
+
+.navbar{
+    z-index: 1000;
+}
+
+
+.navbar li{
+    float: left;
+}
+
+.navbar li a{
+    display: block;
+    color: rgb(241, 233, 233);
+    text-align: center; 
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+    /* margin: 0 5px; */
+}
+
+.navbar li a:hover{
+    /* background-color: white; */
+    color: rgb(255, 255, 255)  ;
+}
+
+.navbar li a::after{
+    content: '';
+    height: 2.5px;
+    width: 95%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 3px;
+    bottom: 1px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.navbar li a:hover::after{
+    opacity: 1;
+
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(12 84 163);
+}
+
+
+.navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+
+}
+
+.navbar ul li .dropdown{
+    position: absolute;
+    top: 135px;
+    left: 78px;
+    width: 100px;
+    background-color: #ffffff;
+    display: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+    z-index: 1000;
+}
+
+.navbar ul li ul a{
+    color: black;
+}
+
+.navbar ul li ul a:hover{
+    color: rgb(12 84 163);
+}
+
+
+.navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.navbar ul li:hover > ul{
+    display: initial;
+}
+
+.main{
+    display: flex;
+    position: relative;
+    margin: 1%;
+}
+
+.left{
+    width: 25%;
+    height: 400px;
+    background-color: rgb(217, 228, 228);
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.left img{
+    margin-top: 2%;
+    width: 45%;
+    border: 10px solid black;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left img:hover{
+    opacity: 80%;
+}
+
+.left .upload{
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.left .upload:hover{
+    color: rgb(12 84 163);
+    text-decoration: underline;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.left .admit-card{
+    background-color: white;
+    padding: 0 20px;
+    margin-top: 7%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.left .admit-card p{
+    animation: blink 2s infinite;
+}
+
+.left .admit-card:hover{
+    background-color: rgb(12 84 163);
+    color: white;
+    text-decoration: underline;
+}
+
+
+.right{
+    width: 72%;
+    height: 800px;
+    background-color: rgb(217, 228, 228);
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.right .header{
+    background-color: rgb(12 84 163);
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.right .header h3{
+    margin-bottom: 10px;
+}
+
+.pageTitle{
+    background-color: rgb(12 84 163);
+    margin: 3.9%;
+    width: 92%;
+}
+
+.pageTitle th{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.studentSemesterHeader{
+    margin: 4% auto;
+    width: 92%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.studentSemesterHeader td{
+    border: 1px solid grey;
+}
+
+
+.semester-data{
+    margin: 5% 3.8%;
+    width: 92%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+.semester-data .headings td{
+    background-color: rgb(12 84 163);
+    color: white;
+    padding: 5px 2px;
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+.semester-data td{
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.semester-data .course-name{
+    text-align: left;
+}
+
+.semester-data .course-name a{
+    margin-left: 1%;
+}
+
+.semester-data .section{
+    text-align: left;
+    font-weight: 500;
+}
+
+.semester-data .sno{
+    font-weight: 500;
+}
+
+
+
+.semester-data a{
+    text-decoration: none;
+    color: rgb(12 84 163);
+}
+
+.semester-data td:nth-child(2) + td{
+    padding: 7px 10px;
+}
+
+
+
+
+.footer{
+    margin-top: 5%;
+    background-color: rgb(233, 236, 238);
+    padding-top: 4%;
+    border-top: 1px solid rgb(221, 212, 212);
+}
+
+
+.img1{
+    width: 15%;
+    border: 1px solid grey;
+    padding: 1%;
+    margin-left: 3%;
+}
+
+.img2{
+    width: 12%;
+    margin-left: 65%;
+    border: 1px solid grey;
+    padding: 1%;
+}
+
+.footer ul{
+    text-align: center;
+}
+
+.footer li{
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.footer li a{
+    color: rgb(0, 0, 0);
+    padding: 14px 2px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.footer li a:hover{
+    color: rgb(12 84 163);
+}
+
+.copyrights{
+    background-color: rgb(12 84 163);
+    color: white;
+    text-align: center;
+}
+
+.copyrights p{
+    margin: 0;
+    padding: 1%;
+}
