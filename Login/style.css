@@ -298,11 +298,6 @@ form input[type='submit']:hover {
         height: auto;
     }
 
-    .footer {
-        /* margin: 5%;
-        padding: 4% 5%; */
-    }
-
     .footer li{
         display: none;
     }
