@@ -13,13 +13,30 @@
         <img src="../assets/zabdesk.png" alt="ZABDESK">
     </div>
     <div class="navbar">
-        <ul>
-            <li><a class="leftnav" href="index.html">Home</a></li>
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html">Teaching's Evaluation</a></li>
-            <li><a href="index.html">EDC Job Portal</a></li>
-            <li><a href="index.html">Contact Us</a></li>
-        </ul>
+        <div class="menu-toggle">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+        <div class="desktop-nav">
+            <ul>
+                <li><a class="leftnav" href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Teaching's Evaluation</a></li>
+                <li><a href="index.html">EDC Job Portal</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+            </ul>
+        </div>
     </div>
     <div class="main">
         <div class="login">
@@ -27,14 +44,14 @@
                 <h3>LOG IN</h3>
             </div>
             <p>Students and staff can log in to their respective portals.</p>
-            <form action="#">
+            <form onsubmit="return validateForm()">
                 <div class="regno">
                     <label for="regno">Registration Number</label>
-                    <input type="number" placeholder="Type your Registration Number here.">
+                    <input id="regnumber" type="number" placeholder="Type your Registration Number here." required>
                 </div>
                 <div class="password">
                     <label for="password">Password</label>
-                    <input type="password" placeholder="Type your Password here.">
+                    <input id="pass" type="password" placeholder="Type your Password here." required>
                 </div>                
                 <div class="campus">
                     <label for="campus">Campus</label>
@@ -65,20 +82,9 @@
                 <h4>Lorem Ipsum</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sit ab a nostrum tenetur libero laboriosam nam.</p>            
             </div>               
-            <div class="notice four">
-                <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sit ab a nostrum tenetur libero laboriosam nam.</p>
-            </div>            
-            <div class="notice five">
-                <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sit ab a nostrum tenetur libero laboriosam nam.</p>
-            </div>            
-            <div class="notice six">
-                <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sit ab a nostrum tenetur libero laboriosam nam.</p>            
-            </div>            
-            </div>
+                        
         </div>
+    </div>
     </div>
     <div class="footer">
         <img class="img1" src="../assets/zabdesk.png" alt="zabsolutions">
@@ -95,3 +101,4 @@
     </div>
 </body>
 </html>
+<script src="login.js"></script>
