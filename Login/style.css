@@ -228,6 +228,17 @@ form input[type='submit']:hover {
     color: rgb(12 84 163);
 }
 
+.copyrights{
+    background-color: rgb(12 84 163);
+    color: white;
+    text-align: center;
+}
+
+.copyrights p{
+    margin: 0;
+    padding: 1%;
+}
+
 .navleft {
     margin-left: 500px;
 }
