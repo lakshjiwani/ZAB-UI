@@ -233,10 +233,6 @@ body {
     border: none;
 }
 
-.left .admit-card button {
-    /* animation: blink 2s infinite; */
-}
-
 .left .admit-card button:hover {
     background-color: rgb(186 206 206);
     color: white;

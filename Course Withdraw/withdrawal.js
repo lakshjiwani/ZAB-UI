@@ -19,7 +19,7 @@ image_input.addEventListener("change", function () {
     reader.readAsDataURL(this.files[0]);
 });
 
-function registerCourses() {
+function withdrawCourses() {
     // Your code for handling individual checkbox registration
 }
 
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
 
         if (checkboxes.length > 0) {
-            alert("Courses registered successfully!");
+            alert("Request for course withdrawal submitted successfully!");
         }
     });
 
@@ -43,6 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    registerCourses();
+    withdrawCourses();
 });
 
