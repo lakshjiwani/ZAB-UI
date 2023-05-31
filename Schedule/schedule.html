@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,278 +7,137 @@
     <link rel="stylesheet" href="style.css">
     <title>Class Schedule</title>
 </head>
-
-<body>
-    <div class="logo">
-        <img class='zabdesk' src="../assets/zabdesk.png" alt="ZABDESK">
-        <img class="person" src="../assets/person.png" alt="person">
-        <a class="home" href="../Home/home.html">Person</a>
-        <a class="sign-out" href="../Login/index.html">Sign Out</a>
-    </div>
-    <div class="navbar">
-        <div class="menu-toggle">
-            <input type="checkbox" id="toggle">
-            <label for="toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-
-            <ul class="menu">
-                <li><a class="leftnav" href="../Home/home.html">Home</a></li>
-                <li>
-                    <a href="javascript:void(0)">Courses</a>
-                    <ul class="dropdown">
-                        <li><a href="javascript:void(0)">View Offered Courses</a></li>
-                        <li><a href="javascript:void(0)">Course Registration</a></li>
-                        <li><a href="../Current Sem/currentsemester.html">Current Semester</a></li>
-                        <li><a href="../Previous Sem/previoussem.html">Previous Semesters</a></li>
-                        <li><a href="javascript:void(0)">Printing Report</a></li>
-                        <li><a href="javascript:void(0)">Course Withdrawal</a></li>
-                        <li><a href="javascript:void(0)">Semester Result</a></li>
-                        <li><a href="javascript:void(0)">Course Improvement</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">Class Schedule</a>
-                    <ul class="dropdown">
-                        <li><a href="javascript:void(0)">Current Week Schedule</a></li>
-                        <li><a href="javascript:void(0)">Advance Week Schedule</a></li>
-                        <li><a href="javascript:void(0)">Class Schedule</a></li>
-                        <li><a href="javascript:void(0)">Exam Schedule</a></li>
-                        <li><a href="javascript:void(0)">Daily Class Schedule</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">Library</a>
-                    <ul class="dropdown">
-                        <li><a href="javascript:void(0)">Library Books Issued</a></li>
-                        <li><a href="javascript:void(0)">Library Card Request</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">My Account</a>
-                    <ul class="dropdown">
-                        <li><a href="javascript:void(0)">Change Password</a></li>
-                        <li><a href="javascript:void(0)">Profile Documents</a></li>
-                        <li><a href="javascript:void(0)">ID Card Request</a></li>
-                        <li><a href="javascript:void(0)">Change Profile Request</a></li>
-                    </ul>
-                </li>
-                <li><a href="javascript:void(0)">Submit Internship Report</a></li>
-                <li><a href="javascript:void(0)">Sign Out</a></li>
-            </ul>
-        </div>
-
-
-        <div class="desktop-nav">
-            <ul>
-                <li><a class="leftnav" href="../Home/home.html">Home</a></li>
-                <li><a href="javascript:void(0)">Courses</a>
-                    <ul>
-                        <li><a href="javascript:void(0)">View Offered Courses</a></li>
-                        <li><a href="javascript:void(0)">Course Registration</a></li>
-                        <li><a href="../Current Sem/currentsemester.html">Current Semester</a></li>
-                        <li><a href="../Previous Sem/previoussem.html">Previous Semesters</a></li>
-                        <li><a href="javascript:void(0)">Printing Report</a></li>
-                        <li><a href="javascript:void(0)">Course Withdrawal</a></li>
-                        <li><a href="javascript:void(0)">Semester Result</a></li>
-                        <li><a href="javascript:void(0)">Course Improvement</a></li>
-                    </ul>
-                </li>
-                <li><a href="javascript:void(0)">Class Schedule</a>
-                    <ul>
-                        <li><a href="javascript:void(0)">Current Week Schedule</a></li>
-                        <li><a href="javascript:void(0)">Advance Week Schedule</a></li>
-                        <li><a href="javascript:void(0)">Class Schedule</a></li>
-                        <li><a href="javascript:void(0)">Exam Schedule</a></li>
-                        <li><a href="javascript:void(0)">Daily Class Schedule</a></li>
-                    </ul>
-                </li>
-                <li><a href="javascript:void(0)">Library</a>
-                    <ul>
-                        <li><a href="javascript:void(0)">Library Books Issued</a></li>
-                        <li><a href="javascript:void(0)">Library Card Request</a></li>
-                    </ul>
-                </li>
-                <li><a href=javascript:void(0)>My Account</a>
-                    <ul>
-                        <li><a href="javascript:void(0)">Change Password</a></li>
-                        <li><a href="javascript:void(0)">Profile Documents</a></li>
-                        <li><a href="javascript:void(0)">ID Card Request</a></li>
-                        <li><a href="javascript:void(0)">Change Profile Request</a></li>
-                    </ul>
-                </li>
-                <li><a href="javascript:void(0)">Submit Internship Report</a></li>
-            </ul>
-        </div>
+<div class="right">
+    <div class="header">
+        <h3>Class Schedule</h3>
     </div>
 
+    <table class="pageTitle">
+        <tbody>
+            <tr>
+                <th>Weekly Class Schedule Status</th>
+            </tr>
+        </tbody>
+    </table>
 
-    <div class="main">
-        <div class="left">
-            <!-- <img class="pic" src="../assets/person.png" alt="person">  -->
-            <!-- <p class="upload">Upload Picture</p> -->
-            <div id="display_image"></div>
-            <input type="file" id="image_input" accept="image/png, image/jpg">
-            <label for="image_input" class="upload-button">Upload Picture</label>
-            <div class="admit-card">
-                <a href="#">
-                    <p>Click here to print your Admit Card.</p>
-                </a>
-            </div>
-        </div>
-        <div class="right">
-            <div class="header">
-                <h3>Class Schedule</h3>
-            </div>
+    <table class="studentSemesterHeader">
+        <tbody>
+            <tr>
+                <td>
+                    <strong>Student</strong>
+                </td>
+                <td>
+                    Laksh Jiwani - 2012247
+                </td>
+                <td>
+                    <strong>Section</strong>
+                </td>
+                <td>
+                    BCS/BS 6 D
+                </td>
+                <td>
+                    <strong>Semester</strong>
+                </td>
+                <td>
+                    Spring 2023
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-            <table class="pageTitle">
-                <tbody>
-                    <tr>
-                        <th>Weekly Class Schedule Status</th>
-                    </tr>
-                </tbody>
-            </table>
+    <table class="schedule">
+        <tbody>
+            <tr>
+                <th>Campus</th>
+                <th>Room</th>
+                <th>Course</th>
+                <th>Section</th>
+                <th>Faculty</th>
+                <th>Date</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Lab 3</td>
+                <td>AI Lab</td>
+                <td>D</td>
+                <td class="faculty">Wali Muhammad Khubaib</td>
+                <td>29/5/2023</td>
+                <td>8:00 AM</td>
+                <td>11:15 AM</td>
+                <td class="scheduled">Scheduled</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>106</td>
+                <td>Technopreneurship</td>
+                <td>B</td>
+                <td class="faculty">Dr.Imran Amin</td>
+                <td>30/5/2023</td>
+                <td>11:30 AM</td>
+                <td>2:45 PM</td>
+                <td class="scheduled">Scheduled</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>402</td>
+                <td>AI Theory</td>
+                <td>D</td>
+                <td class="faculty">Waqar Khan</td>
+                <td>31/5/2023</td>
+                <td>11:30 AM</td>
+                <td>2:45 PM</td>
+                <td class="scheduled">Scheduled</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>402</td>
+                <td>CNDC Theory</td>
+                <td>D</td>
+                <td class="faculty">Bilal Hasan</td>
+                <td>1/6/2023</td>
+                <td>11:30 AM</td>
+                <td>2:45 PM</td>
+                <td class="scheduled">Scheduled</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Lab 4</td>
+                <td>UI Design</td>
+                <td>A</td>
+                <td class="faculty">Ali Mobin</td>
+                <td>1/6/2023</td>
+                <td>3:00 PM</td>
+                <td>6:15 PM</td>
+                <td class="scheduled">Scheduled</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Lab 6</td>
+                <td>CNDC Lab</td>
+                <td>D</td>
+                <td class="faculty">Sheikh Riaz</td>
+                <td>2/6/2023</td>
+                <td>8:00 AM</td>
+                <td>11:15 AM</td>
+                <td class="cancelled">Cancelled</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>405</td>
+                <td>TBW</td>
+                <td>D</td>
+                <td class="faculty">Sajid Siraj</td>
+                <td>2/6/2023</td>
+                <td>11:30 AM</td>
+                <td>2:45 PM</td>
+                <td class="scheduled">Scheduled</td>
+            </tr>
 
-            <table class="studentSemesterHeader">
-                <tbody>
-                    <tr>
-                        <td>
-                            <strong>Student</strong>
-                        </td>
-                        <td>
-                            Laksh Jiwani - 2012247
-                        </td>
-                        <td>
-                            <strong>Section</strong>
-                        </td>
-                        <td>
-                            BCS/BS 6 D
-                        </td>
-                        <td>
-                            <strong>Semester</strong>
-                        </td>
-                        <td>
-                            Spring 2023
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        </tbody>
+    </table>
 
-            <table class="schedule">
-                <tbody>
-                    <tr>
-                        <th>Campus</th>
-                        <th>Room</th>
-                        <th>Course</th>
-                        <th>Section</th>
-                        <th>Faculty</th>
-                        <th>Date</th>
-                        <th>Start Time</th>
-                        <th>End Time</th>
-                        <th>Status</th>
-                    </tr>
-                    <tr>
-                        <td>100</td>
-                        <td>Lab 3</td>
-                        <td>AI Lab</td>
-                        <td>D</td>
-                        <td class="faculty">Wali Muhammad Khubaib</td>
-                        <td>29/5/2023</td>
-                        <td>8:00 AM</td>
-                        <td>11:15 AM</td>
-                        <td class="scheduled">Scheduled</td>
-                    </tr>
-                    <tr>
-                        <td>100</td>
-                        <td>106</td>
-                        <td>Technopreneurship</td>
-                        <td>B</td>
-                        <td class="faculty">Dr.Imran Amin</td>
-                        <td>30/5/2023</td>
-                        <td>11:30 AM</td>
-                        <td>2:45 PM</td>
-                        <td class="scheduled">Scheduled</td>
-                    </tr>
-                    <tr>
-                        <td>100</td>
-                        <td>402</td>
-                        <td>AI Theory</td>
-                        <td>D</td>
-                        <td class="faculty">Waqar Khan</td>
-                        <td>31/5/2023</td>
-                        <td>11:30 AM</td>
-                        <td>2:45 PM</td>
-                        <td class="scheduled">Scheduled</td>
-                    </tr>
-                    <tr>
-                        <td>100</td>
-                        <td>402</td>
-                        <td>CNDC Theory</td>
-                        <td>D</td>
-                        <td class="faculty">Bilal Hasan</td>
-                        <td>1/6/2023</td>
-                        <td>11:30 AM</td>
-                        <td>2:45 PM</td>
-                        <td class="scheduled">Scheduled</td>
-                    </tr>
-                    <tr>
-                        <td>100</td>
-                        <td>Lab 4</td>
-                        <td>UI Design</td>
-                        <td>A</td>
-                        <td class="faculty">Ali Mobin</td>
-                        <td>1/6/2023</td>
-                        <td>3:00 PM</td>
-                        <td>6:15 PM</td>
-                        <td class="scheduled">Scheduled</td>
-                    </tr>
-                    <tr>
-                        <td>100</td>
-                        <td>Lab 6</td>
-                        <td>CNDC Lab</td>
-                        <td>D</td>
-                        <td class="faculty">Sheikh Riaz</td>
-                        <td>2/6/2023</td>
-                        <td>8:00 AM</td>
-                        <td>11:15 AM</td>
-                        <td class="cancelled">Cancelled</td>
-                    </tr>
-                    <tr>
-                        <td>100</td>
-                        <td>405</td>
-                        <td>TBW</td>
-                        <td>D</td>
-                        <td class="faculty">Sajid Siraj</td>
-                        <td>2/6/2023</td>
-                        <td>11:30 AM</td>
-                        <td>2:45 PM</td>
-                        <td class="scheduled">Scheduled</td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-        </div>
-    </div>
-
-
-
-    <div class="footer">
-        <img class="img1" src="../assets/zabdesk.png" alt="zabsolutions">
-        <img class="img2" src="../assets/szabist.png" alt="szabist">
-        <ul>
-            <li><a class="navleft" href="index.html">Home |</a></li>
-            <li><a href="index.html">About |</a></li>
-            <li><a href="index.html">Feedback |</a></li>
-            <li><a href="index.html">Contact Us</a></li>
-        </ul>
-    </div>
-    <div class="copyrights">
-        <p>Copyright © 2023 Zab Solutions. All rights reserved.</p>
-    </div>
-</body>
-
-</html>
+</div>
 <script src="schedule.js"></script>

@@ -2,19 +2,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Withdrawal</title>
-    <link rel="stylesheet" href="../global.css">
+    <title>Course Improve</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global.css">
 </head>
 <div class="right">
     <div class="header">
-        <h3>Course Withdrawal</h3>
+        <h3>Course Improve</h3>
     </div>
 
     <table class="head">
         <tbody>
             <tr>
-                <td>Select the course you want to withdraw</td>
+                <td>Select the course you want to improve</td>
             </tr>
         </tbody>
     </table>
@@ -22,7 +22,7 @@
     <table class="registered-courses">
         <tbody>
             <tr>
-                <th colspan="4">Registered Courses</th>
+                <th colspan="4">Courses offered this semester</th>
             </tr>
             <tr>
                 <th class="center">S.No</th>
@@ -35,7 +35,7 @@
                 <td>CSC1205 Technical and Business Writing (3,0)</td>
                 <td>Syed Muhammad Sajid Siraj</td>
                 <td class="center">
-                    <input type="checkbox" id="courseCheckbox">
+                    <input type="checkbox">
                 </td>
             </tr>
             <tr>
@@ -43,7 +43,7 @@
                 <td>CSC3205 Computer Networks and Data Communications (3,0)</td>
                 <td>Bilal Hasan</td>
                 <td class="center">
-                    <input type="checkbox" id="courseCheckbox">
+                    <input type="checkbox">
                 </td>
             </tr>
             <tr>
@@ -51,7 +51,7 @@
                 <td>CSC4101 Artificial Intelligence (3,0)</td>
                 <td>Muhammad Waqar Khan</td>
                 <td class="center">
-                    <input type="checkbox" id="courseCheckbox">
+                    <input type="checkbox">
                 </td>
             </tr>
             <tr>
@@ -59,7 +59,7 @@
                 <td>CSCL3205 Lab: Computer Networks and Data Communications (0,1)</td>
                 <td>Shaikh Riaz ul haq</td>
                 <td class="center">
-                    <input type="checkbox" id="courseCheckbox">
+                    <input type="checkbox">
                 </td>
             </tr>
             <tr>
@@ -67,7 +67,7 @@
                 <td>CSCL4101 Lab: Artificial Intelligence (0,1)</td>
                 <td>Wali Muhammad Khubaib</td>
                 <td class="center">
-                    <input type="checkbox" id="courseCheckbox">
+                    <input type="checkbox">
                 </td>
             </tr>
             <tr>
@@ -75,7 +75,7 @@
                 <td>CSC4724 User Interface Design (0,3)</td>
                 <td>Ali Mobin Memon</td>
                 <td class="center">
-                    <input type="checkbox" id="courseCheckbox">
+                    <input type="checkbox">
                 </td>
             </tr>
             <tr>
@@ -83,15 +83,16 @@
                 <td>CSC4816 Technopreneurship (0,3)</td>
                 <td>Dr.Imran Amin</td>
                 <td class="center">
-                    <input type="checkbox" id="courseCheckbox">
+                    <input type="checkbox">
                 </td>
             </tr>
         </tbody>
     </table>
 
     <div class="buttons">
-        <input class="submit" type="submit" value="Submit" id="submitButton" onclick="withdrawCourses()">
-        <input class="reset" type="reset" value="Reset" onclick="withdrawCourses()" id="resetButton">
+        <input class="submit" type="submit" value="Submit" id="submitButton" onclick="improveCourses()">
+        <input class="reset" type="reset" value="Reset" id="resetButton" onclick="improveCourses()">
     </div>
 </div>
-<script src="withdrawal.js"></script>
+
+<script src="improve.js"></script>

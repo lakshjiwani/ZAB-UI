@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZABDESK</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
     <div class="logo">
         <img src="../assets/zabdesk.png" alt="ZABDESK">
@@ -21,12 +23,12 @@
                 <span></span>
             </label>
             <ul class="menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-          </div>
+        </div>
 
         <div class="desktop-nav">
             <ul>
@@ -44,7 +46,7 @@
                 <h3>LOG IN</h3>
             </div>
             <p>Students and staff can log in to their respective portals.</p>
-            <form onsubmit="redirect()">
+            <form>
                 <div class="regno">
                     <label for="regno">Registration Number</label>
                     <input id="regnumber" type="number" placeholder="Type your Registration Number here." required>
@@ -52,13 +54,13 @@
                 <div class="password">
                     <label for="password">Password</label>
                     <input id="pass" type="password" placeholder="Type your Password here." required>
-                </div>                
+                </div>
                 <div class="campus">
                     <label for="campus">Campus</label>
                     <input type="text" placeholder="Karachi" readonly>
                 </div>
                 <div class="button">
-                    <input type="submit" value="Log In">
+                    <input type="submit" value="Log In" onclick="redirect()">
                 </div>
             </form>
             <div class="forgotpassword">
@@ -69,20 +71,23 @@
         <div class="noticeboard">
             <div class="header2">
                 <h3>NOTICE BOARD</h3>
-            </div> 
+            </div>
             <div class="notice one">
                 <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sit ab a nostrum tenetur libero laboriosam nam.</p>
-            </div>            
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sit ab a nostrum tenetur libero
+                    laboriosam nam.</p>
+            </div>
             <div class="notice two">
                 <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sit ab a nostrum tenetur libero laboriosam nam.</p>
-            </div>            
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sit ab a nostrum tenetur libero
+                    laboriosam nam.</p>
+            </div>
             <div class="notice three">
                 <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sit ab a nostrum tenetur libero laboriosam nam.</p>            
-            </div>               
-                        
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sit ab a nostrum tenetur libero
+                    laboriosam nam.</p>
+            </div>
+
         </div>
     </div>
     </div>
@@ -100,5 +105,6 @@
         <p>Copyright © 2023 Zab Solutions. All rights reserved.</p>
     </div>
 </body>
+
 </html>
 <script src="login.js"></script>
