@@ -220,7 +220,7 @@ body {
 }
 
 .left .admit-card {
-    background-color: white;
+    /* background-color: white; */
     width: 90%;
     text-align: center;
     margin-top: 7%;
@@ -228,14 +228,20 @@ body {
     border-radius: 5px;
 }
 
-.left .admit-card p {
-    animation: blink 2s infinite;
+.admit-card button {
+    background-color: #d9e4e4;
+    border: none;
 }
 
-.left .admit-card:hover {
-    background-color: rgb(12 84 163);
+.left .admit-card button {
+    /* animation: blink 2s infinite; */
+}
+
+.left .admit-card button:hover {
+    background-color: rgb(186 206 206);
     color: white;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .right {
@@ -408,6 +414,8 @@ input {
     margin: 0;
     padding: 1%;
 }
+
+
 
 
 @media (max-width: 800px) {

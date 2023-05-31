@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
     <div class="logo">
         <img class='zabdesk' src="../assets/zabdesk.png" alt="ZABDESK">
@@ -22,7 +24,7 @@
                 <span></span>
                 <span></span>
             </label>
-    
+
             <ul class="menu">
                 <li><a class="leftnav" href="../Home/home.html">Home</a></li>
                 <li>
@@ -116,13 +118,13 @@
 
     <div class="main">
         <div class="left">
-                <!-- <img class="pic" src="../assets/person.png" alt="person">  -->
+            <!-- <img class="pic" src="../assets/person.png" alt="person">  -->
             <!-- <p class="upload">Upload Picture</p> -->
             <div id="display_image"></div>
             <input type="file" id="image_input" accept="image/png, image/jpg">
             <label for="image_input" class="upload-button">Upload Picture</label>
             <div class="admit-card">
-                <a href="#"><p>Click here to print your Admit Card.</p></a>
+                <button onclick="printAdmit()">Click here to print your Admit Card.</button>
             </div>
         </div>
         <div class="right">
@@ -152,13 +154,13 @@
                         </td>
                         <td>
                             BCS/BS 6 D
-                        </td>                         
+                        </td>
                         <td>
                             <strong>Semester</strong>
                         </td>
                         <td>
                             Spring 2023
-                        </td>                        
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -167,39 +169,57 @@
                 <table class="main-table">
                     <tbody>
                         <tr>
-                            <th class="top-field"><div class="fields">Registration Number</div></th>
+                            <th class="top-field">
+                                <div class="fields">Registration Number</div>
+                            </th>
                             <td>2012xxx</td>
-                        </tr>                        
-                         <tr>
-                            <th><div class="fields">First Name</div></th>
-                            <td>User</td>
-                        </tr>                       
+                        </tr>
                         <tr>
-                            <th><div class="fields">Middle Name</div></th>
+                            <th>
+                                <div class="fields">First Name</div>
+                            </th>
+                            <td>User</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="fields">Middle Name</div>
+                            </th>
                             <td></td>
                         </tr>
                         <tr>
-                            <th><div class="fields">Last Name</div></th>
+                            <th>
+                                <div class="fields">Last Name</div>
+                            </th>
                             <td>Interface</td>
                         </tr>
                         <tr>
-                            <th><div class="fields">Father's Name</div></th>
+                            <th>
+                                <div class="fields">Father's Name</div>
+                            </th>
                             <td>Father</td>
                         </tr>
                         <tr>
-                            <th><div class="fields">Date of Birth</div></th>
+                            <th>
+                                <div class="fields">Date of Birth</div>
+                            </th>
                             <td>29/7/2000</td>
                         </tr>
                         <tr>
-                            <th><div class="fields">NIC</div></th>
+                            <th>
+                                <div class="fields">NIC</div>
+                            </th>
                             <td>42294-2394024-4</td>
                         </tr>
                         <tr>
-                            <th><div class="fields">Gender</div></th>
+                            <th>
+                                <div class="fields">Gender</div>
+                            </th>
                             <td>Male</td>
                         </tr>
                         <tr class="inputs">
-                            <th><div class="fields">Blood Group</div></th>
+                            <th>
+                                <div class="fields">Blood Group</div>
+                            </th>
                             <td>
                                 <select>
                                     <option value="1">A+</option>
@@ -215,67 +235,89 @@
                             </td>
                         </tr>
                         <tr class="inputs">
-                            <th><div class="fields">Father's Occupation</div></th>
+                            <th>
+                                <div class="fields">Father's Occupation</div>
+                            </th>
                             <td>
                                 <input type="text" maxlength="50" value="Business">
                             </td>
-                        </tr>                        
+                        </tr>
                         <tr class="inputs">
-                            <th><div class="fields">Father's Organization</div></th>
+                            <th>
+                                <div class="fields">Father's Organization</div>
+                            </th>
                             <td>
                                 <input type="text" maxlength="50" value="Director">
                             </td>
                         </tr>
                         <tr class="inputs">
-                            <th><div class="fields">Mailing Address</div></th>
+                            <th>
+                                <div class="fields">Mailing Address</div>
+                            </th>
                             <td>
                                 <input type="text" maxlength="50" value="DHA Phase 8">
                             </td>
                         </tr>
                         <tr class="inputs">
-                            <th><div class="fields">Mailing Address Postal Code</div></th>
+                            <th>
+                                <div class="fields">Mailing Address Postal Code</div>
+                            </th>
                             <td>
                                 <input type="text" maxlength="50" value="75400">
                             </td>
                         </tr>
                         <tr class="inputs">
-                            <th><div class="fields">Mailing Address City</div></th>
+                            <th>
+                                <div class="fields">Mailing Address City</div>
+                            </th>
                             <td>
                                 <input type="text" maxlength="50" value="Karachi">
                             </td>
                         </tr>
                         <tr class="inputs">
-                            <th><div class="fields">Mailing Address Country</div></th>
+                            <th>
+                                <div class="fields">Mailing Address Country</div>
+                            </th>
                             <td>
                                 <input type="text" maxlength="50" value="Pakistan">
                             </td>
                         </tr>
                         <tr class="inputs">
-                            <th><div class="fields">Home Phone</div></th>
+                            <th>
+                                <div class="fields">Home Phone</div>
+                            </th>
                             <td>
                                 <input type="tel" maxlength="15" value="090078601">
                             </td>
                         </tr>
                         <tr class="inputs">
-                            <th><div class="fields">Mobile</div></th>
+                            <th>
+                                <div class="fields">Mobile</div>
+                            </th>
                             <td>
                                 <input type="tel" maxlength="15" value="03172098314">
                             </td>
                         </tr>
                         <tr class="inputs">
-                            <th><div class="fields">Permanent Address City</div></th>
+                            <th>
+                                <div class="fields">Permanent Address City</div>
+                            </th>
                             <td>
                                 <input type="text" maxlength="50" value="Pakistan">
                             </td>
                         </tr>
                         <tr class="inputs">
-                            <th><div class="fields">Emergency Contact Name</div></th>
+                            <th>
+                                <div class="fields">Emergency Contact Name</div>
+                            </th>
                             <td>
                                 <input type="text" maxlength="20" value="Ali Mobin">
                             </td>
                         </tr>
                         <tr class="inputs">
-                            <th class="last-field"><div class="fields">Emergency Contact No.</div></th>
+                            <th class="last-field">
+                                <div class="fields">Emergency Contact No.</div>
+                            </th>
                             <td>
                                 <input type="tel" maxlength="15" value="0333xxxxxxx">
                             </td>
@@ -285,7 +327,7 @@
             </form>
             <div class="buttons">
                 <input class="submit" type="submit" value="Submit">
-                <input class="reset" type="reset" value="Reset">                            
+                <input class="reset" type="reset" value="Reset">
             </div>
         </div>
     </div>
@@ -304,5 +346,6 @@
         <p>Copyright © 2023 Zab Solutions. All rights reserved.</p>
     </div>
 </body>
+
 </html>
 <script src="home.js"></script>
