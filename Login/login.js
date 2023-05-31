@@ -26,6 +26,15 @@ function validateForm(){
     return true;
 }
 
+function redirect(){
+    if (validateForm() == true){
+        window.location.assign("../ZAB-UI/Home/home.html");
+    }
+    else{
+        console.log("Cannot redirect");
+    }
+}
+
 //Close the menu when a link is clicked
 document.querySelectorAll('.menu a').forEach(link => {
     link.addEventListener('click', () => {
