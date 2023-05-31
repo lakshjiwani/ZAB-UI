@@ -1,0 +1,49 @@
+.semester-data{
+    margin: 5% 3.8%;
+    width: 92%;
+    border-collapse: collapse;
+}
+
+.semester-data .headings td{
+    background-color: rgb(12 84 163);
+    color: white;
+    padding: 5px 2px;
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+.semester-data td{
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.semester-data .course-name{
+    text-align: left;
+}
+
+.semester-data .course-name a{
+    margin-left: 1%;
+}
+
+.semester-data .section{
+    text-align: left;
+    font-weight: 500;
+}
+
+.semester-data .sno{
+    font-weight: 500;
+}
+
+
+.semester-data a{
+    text-decoration: none;
+    color: rgb(12 84 163);
+}
+
+.semester-data td:nth-child(2) + td{
+    padding: 7px 10px;
+}

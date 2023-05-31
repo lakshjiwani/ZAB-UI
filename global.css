@@ -480,18 +480,18 @@ body{
 
 .footer ul{
     text-align: center;
+    padding-left: 0;
 }
 
 .footer li{
     list-style-type: none;
     display: inline-block;
-    text-align: center;
     margin-top: 5%;
 }
 
 .footer li a{
     color: rgb(0, 0, 0);
-    padding: 14px 2px;
+    padding: 14px 1px;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;

@@ -1,0 +1,55 @@
+/* Change Password CSS */
+
+.change-password{
+    border-collapse: collapse;
+    border: 1px solid grey;
+    width: 92.3%;
+    margin: 2% 3.8%;
+}
+
+.change-password th{
+    background-color:rgb(12, 84, 163);
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 1.2% 0;
+    width: 40%;
+}
+
+.change-password td{
+    font-size: 0.8rem;
+    padding: 1%;
+}
+
+.change-password td input, select{
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1%;
+    margin-left: 1%;
+}
+
+.change-password .buttons{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 15%;
+}
+
+.change-password .buttons input{
+    padding: 2%;
+    border: 0.5px solid grey;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.buttons input:hover{
+    background-color: rgb(12, 84, 163);
+    color: white;
+}
+
+.buttons .submit{
+    margin: 0 5%;
+}

@@ -1,0 +1,71 @@
+.student-info{
+    border: 1px solid grey;
+    border-collapse: collapse;
+    margin: 5% 3.8%;
+    width: 92%;
+    
+}
+
+.student-info th{
+    border: 1px solid grey;
+    padding: 1% 0;
+    background-color: rgb(12 84 163);
+    color: white;
+    font-weight: 500;
+    border-bottom: 1px solid #fff;
+}
+
+.student-info td{
+    text-align: center;
+    width: 70%;
+    background-color: #fff;
+}
+
+
+.cost-detail{
+    margin: 5% 3.8%;
+    font-weight: 500;
+}
+
+.print-detail{
+    margin: 5% 3.8%;
+    width: 92%;
+    border-collapse: collapse;
+
+}
+
+.print-detail th{
+    border: 1px solid gray;
+    background-color: rgb(12 84 163);
+    color: #fff;
+    font-weight: 500;
+    padding: 1% 0;
+}
+
+.print-detail td{
+    background-color: #fff;
+    padding: 2% 0;
+}
+
+hr{
+    width: 92%;
+}
+
+.paper-report{
+    width: 92%;
+    margin: 5% 3.8%;
+    border-collapse: collapse;
+}
+
+.paper-report th{
+    border: 1px solid grey;
+    background-color: rgb(12 84 163);
+    color: #fff;
+    padding: 1% 0;
+    font-weight: 500;
+}
+
+.paper-report td{
+    background-color: #fff;
+    padding: 2% 0;
+}
