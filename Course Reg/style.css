@@ -1,0 +1,75 @@
+
+.head{
+    background-color: rgb(12 84 163);
+    color: white;
+    font-weight: 500;
+    width: 92%;
+    margin: 5% 3.8% 0 3.8%;
+    text-align: center;
+}
+
+.offered-courses{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    width: 92%;
+    margin: 1% 3.8% 2% 3.8%;
+}
+
+.offered-courses th{
+    background-color: rgb(12 84 163);
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #fff;
+    padding: 0.7%;
+    text-align: center;
+
+}
+
+.offered-courses td{
+    border: 1px solid grey;
+    background-color: #fff;
+    padding: 0.7%;
+}
+
+.offered-courses .center , .offered-courses .availability{
+    text-align: center;
+    padding: 0 10px;
+}
+
+.offered-courses .availability{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+
+
+hr{
+    width: 92%;
+    margin-bottom: 7%;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.buttons input{
+    padding: 1.5% 6%;
+    border: 0.5px solid grey;
+    background-color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.buttons input:hover{
+    background-color: rgb(12 84 163);
+    color: white;
+}
+
+.buttons .submit{
+    margin: 0 2%;
+}

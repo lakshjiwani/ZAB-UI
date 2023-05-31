@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img class='zabdesk' src="../assets/zabdesk.png" alt="ZABDESK">
+        <img class="person" src="../assets/person.png" alt="person">
+        <a class="home" href="../Home/home.html">Person</a>
+        <a class="sign-out" href="../Login/index.html">Sign Out</a>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a class="leftnav" href="../Home/home.html">Home</a></li>
+            <li><a href="javascript:void(0)">Courses</a>
+                <ul>
+                    <li><a href="javascript:void(0)">View Offered Courses</a></li>
+                    <li><a href="javascript:void(0)">Course Registration</a></li>
+                    <li><a href="../Current Sem/currentsemester.html">Current Semester</a></li>
+                    <li><a href="../Previous Sem/previoussem.html">Previous Semesters</a></li>
+                    <li><a href="javascript:void(0)">Printing Report</a></li>
+                    <li><a href="javascript:void(0)">Course Withdrawal</a></li>
+                    <li><a href="javascript:void(0)">Semester Result</a></li>
+                    <li><a href="javascript:void(0)">Course Improvement</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0)">Class Schedule</a>
+                <ul>
+                    <li><a href="javascript:void(0)">Current Week Schedule</a></li>
+                    <li><a href="javascript:void(0)">Advance Week Schedule</a></li>
+                    <li><a href="javascript:void(0)">Class Schedule</a></li>
+                    <li><a href="javascript:void(0)">Exam Schedule</a></li>
+                    <li><a href="javascript:void(0)">Daily Class Schedule</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0)">Library</a>
+                <ul>
+                    <li><a href="javascript:void(0)">Library Books Issued</a></li>
+                    <li><a href="javascript:void(0)">Library Card Request</a></li>
+                </ul>
+            </li>
+            <li><a href=javascript:void(0)>My Account</a>
+                <ul>
+                    <li><a href="javascript:void(0)">Change Password</a></li>
+                    <li><a href="javascript:void(0)">Profile Documents</a></li>
+                    <li><a href="javascript:void(0)">ID Card Request</a></li>
+                    <li><a href="javascript:void(0)">Change Profile Request</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0)">Submit Internship Report</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="left">
+                <img class="pic" src="../assets/person.png" alt="person"> 
+            <p class="upload">Upload Picture</p>
+            <div class="admit-card">
+                <p>Click here to print your Admit Card.</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <h3>Course Registration</h3>
+            </div>
+
+            <table class="head">
+                <tbody>
+                    <tr>
+                        <td>Courses offered in your section</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="offered-courses">
+                <tbody>
+                    <tr>
+                        <th colspan="5">BCS/BS 6 - Section D</th>
+                    </tr>
+                    <tr>
+                        <th class="center">Seats</th>
+                        <th class="center">S.No</th>
+                        <th>Course Name</th>
+                        <th>Faculty Name</th>
+                        <th class="center">Select</th>
+                    </tr>
+                    <tr>
+                        <td class="availability">08/42</td>
+                        <td class="center">1</td>
+                        <td>CSC1205 Technical and Business Writing (3,0)</td>
+                        <td>Syed Muhammad Sajid Siraj</td>
+                        <td class="center">
+                          <input type="checkbox">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="availability">41/42</td>
+                        <td class="center">2</td>
+                        <td>CSC3205 Computer Networks and Data Communications (3,0)</td>
+                        <td>Bilal Hasan</td>
+                        <td class="center">
+                          <input type="checkbox">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="availability">22/42</td>
+                        <td class="center">3</td>
+                        <td>CSC4101 Artificial Intelligence (3,0)</td>
+                        <td>Muhammad Waqar Khan</td>
+                        <td class="center">
+                          <input type="checkbox">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="availability">15/42</td>
+                        <td class="center">4</td>
+                        <td>CSCL3205 Lab: Computer Networks and Data Communications (0,1)</td>
+                        <td>Shaikh Riaz ul haq</td>
+                        <td class="center">
+                          <input type="checkbox">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="availability">36/42</td>
+                        <td class="center">5</td>
+                        <td>CSCL4101 Lab: Artificial Intelligence (0,1)</td>
+                        <td>Wali Muhammad Khubaib</td>
+                        <td class="center">
+                          <input type="checkbox">
+                        </td>
+                      </tr>
+                </tbody>
+            </table>
+
+            <div class="buttons">
+                <input class="submit" type="submit" value="Submit">
+                <input class="reset" type="reset" value="Reset">                            
+            </div>
+
+            <hr>
+
+            <table class="head">
+                <tbody>
+                    <tr>
+                        <td>Courses offered in other sections</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="offered-courses">
+                <tbody>
+                    <tr>
+                        <th colspan="4">BCS/BS 6 - Section A</th>
+                    </tr>
+                    <tr>
+                        <th class="center">S.No</th>
+                        <th>Course Name</th>
+                        <th>Faculty Name</th>
+                    </tr>
+                    <tr>
+                        <td class="center">1</td>
+                        <td>CSC1205 Technical and Business Writing (3,0)</td>
+                        <td>Huma Aftab</td>
+                    </tr>
+                    <tr>
+                        <td class="center">2</td>
+                        <td>CSC3205 Computer Networks and Data Communications (3,0)</td>
+                        <td>Jahanzeb Feroze</td>
+                    </tr>
+                    <tr>
+                        <td class="center">3</td>
+                        <td>CSC4101 Artificial Intelligence (3,0)</td>
+                        <td>Dr. Mazhar Ali</td>
+                    </tr>
+                    <tr>
+                        <td class="center">4</td>
+                        <td>CSCL3205 Lab: Computer Networks and Data Communications (0,1)</td>
+                        <td>Mubeen Ahmed Khan</td>
+                    </tr>
+                    <tr>
+                        <td class="center">5</td>
+                        <td>CSCL4101 Lab: Artificial Intelligence (0,1)</td>
+                        <td>Wali Muhammad Khubaib</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="offered-courses">
+                <tbody>
+                    <tr>
+                        <th colspan="4">BCS/BS 6 - Section B</th>
+                    </tr>
+                    <tr>
+                        <th class="center">S.No</th>
+                        <th>Course Name</th>
+                        <th>Faculty Name</th>
+                    </tr>
+                    <tr>
+                        <td class="center">1</td>
+                        <td>CSC1205 Technical and Business Writing (3,0)</td>
+                        <td>Ijlal Hussain</td>
+                    </tr>
+                    <tr>
+                        <td class="center">2</td>
+                        <td>CSC3205 Computer Networks and Data Communications (3,0)</td>
+                        <td>Bilal Hasan</td>
+                    </tr>
+                    <tr>
+                        <td class="center">3</td>
+                        <td>CSC4101 Artificial Intelligence (3,0)</td>
+                        <td>Muhammad Waqar Khan</td>
+                    </tr>
+                    <tr>
+                        <td class="center">4</td>
+                        <td>CSCL3205 Lab: Computer Networks and Data Communications (0,1)</td>
+                        <td>Faizan Asif</td>
+                    </tr>
+                    <tr>
+                        <td class="center">5</td>
+                        <td>CSCL4101 Lab: Artificial Intelligence (0,1)</td>
+                        <td>Sheikh Usama Khalid</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="offered-courses">
+                <tbody>
+                    <tr>
+                        <th colspan="4">BCS/BS 6 - Section C</th>
+                    </tr>
+                    <tr>
+                        <th class="center">S.No</th>
+                        <th>Course Name</th>
+                        <th>Faculty Name</th>
+                    </tr>
+                    <tr>
+                        <td class="center">1</td>
+                        <td>CSC1205 Technical and Business Writing (3,0)</td>
+                        <td>Muhammad Younus</td>
+                    </tr>
+                    <tr>
+                        <td class="center">2</td>
+                        <td>CSC3205 Computer Networks and Data Communications (3,0)</td>
+                        <td>Fahad Faiz</td>
+                    </tr>
+                    <tr>
+                        <td class="center">3</td>
+                        <td>CSC4101 Artificial Intelligence (3,0)</td>
+                        <td>Ali Zaman</td>
+                    </tr>
+                    <tr>
+                        <td class="center">4</td>
+                        <td>CSCL3205 Lab: Computer Networks and Data Communications (0,1)</td>
+                        <td>Sheikh Usama Khalid</td>
+                    </tr>
+                    <tr>
+                        <td class="center">5</td>
+                        <td>CSCL4101 Lab: Artificial Intelligence (0,1)</td>
+                        <td>Sheikh Usama Khalid</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="offered-courses">
+                <tbody>
+                    <tr>
+                        <th colspan="4">BCS/BS 6 - Section E</th>
+                    </tr>
+                    <tr>
+                        <th class="center">S.No</th>
+                        <th>Course Name</th>
+                        <th>Faculty Name</th>
+                    </tr>
+                    <tr>
+                        <td class="center">1</td>
+                        <td>CSC1205 Technical and Business Writing (3,0)</td>
+                        <td>Ijlal Hussain</td>
+                    </tr>
+                    <tr>
+                        <td class="center">2</td>
+                        <td>CSC3205 Computer Networks and Data Communications (3,0)</td>
+                        <td>Muhammad Shahzad Haroon</td>
+                    </tr>
+                    <tr>
+                        <td class="center">3</td>
+                        <td>CSC4101 Artificial Intelligence (3,0)</td>
+                        <td>Ali Zaman</td>
+                    </tr>
+                    <tr>
+                        <td class="center">4</td>
+                        <td>CSCL3205 Lab: Computer Networks and Data Communications (0,1)</td>
+                        <td>Mubeen Ahmed Khan</td>
+                    </tr>
+                    <tr>
+                        <td class="center">5</td>
+                        <td>CSCL4101 Lab: Artificial Intelligence (0,1)</td>
+                        <td>Wali Muhammad Khubaib</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="offered-courses">
+                <tbody>
+                    <tr>
+                        <th colspan="4">BCS/BS 6 - Section F</th>
+                    </tr>
+                    <tr>
+                        <th class="center">S.No</th>
+                        <th>Course Name</th>
+                        <th>Faculty Name</th>
+                    </tr>
+                    <tr>
+                        <td class="center">1</td>
+                        <td>CSC1205 Technical and Business Writing (3,0)</td>
+                        <td>Syed Muhammad Sajid Siraj</td>
+                    </tr>
+                    <tr>
+                        <td class="center">2</td>
+                        <td>CSC3205 Computer Networks and Data Communications (3,0)</td>
+                        <td>Muhammad Shahzad Haroon</td>
+                    </tr>
+                    <tr>
+                        <td class="center">3</td>
+                        <td>CSC4101 Artificial Intelligence (3,0)</td>
+                        <td>Mohammad Asim Ali</td>
+                    </tr>
+                    <tr>
+                        <td class="center">4</td>
+                        <td>CSCL3205 Lab: Computer Networks and Data Communications (0,1)</td>
+                        <td>Mubeen Ahmed Khan</td>
+                    </tr>
+                    <tr>
+                        <td class="center">5</td>
+                        <td>CSCL4101 Lab: Artificial Intelligence (0,1)</td>
+                        <td>Sheikh Usama Khalid</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="offered-courses">
+                <tbody>
+                    <tr>
+                        <th colspan="4">BCS/BS 6 - Section G</th>
+                    </tr>
+                    <tr>
+                        <th class="center">S.No</th>
+                        <th>Course Name</th>
+                        <th>Faculty Name</th>
+                    </tr>
+                    <tr>
+                        <td class="center">1</td>
+                        <td>CSC1205 Technical and Business Writing (3,0)</td>
+                        <td>Syed Qaiser Hussain</td>
+                    </tr>
+                    <tr>
+                        <td class="center">2</td>
+                        <td>CSC3205 Computer Networks and Data Communications (3,0)</td>
+                        <td>Fahad Faiz</td>
+                    </tr>
+                    <tr>
+                        <td class="center">3</td>
+                        <td>CSC4101 Artificial Intelligence (3,0)</td>
+                        <td>Mohammad Asim Ali</td>
+                    </tr>
+                    <tr>
+                        <td class="center">4</td>
+                        <td>CSCL3205 Lab: Computer Networks and Data Communications (0,1)</td>
+                        <td>Mubeen Ahmed Khan</td>
+                    </tr>
+                    <tr>
+                        <td class="center">5</td>
+                        <td>CSCL4101 Lab: Artificial Intelligence (0,1)</td>
+                        <td>Wali Muhammad Khubaib</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="offered-courses">
+                <tbody>
+                    <tr>
+                        <th colspan="5">BCS/BS - Electives</th>
+                    </tr>
+                    <tr>
+                        <th class="center">Seats</th>
+                        <th class="center">S.No</th>
+                        <th>Course Name</th>
+                        <th>Faculty Name</th>
+                        <th class="center">Select</th>
+                    </tr>
+                    <tr>
+                        <td class="availability">08/42</td>
+                        <td class="center">1</td>
+                        <td>CSC1205 Technical and Business Writing (3,0)</td>
+                        <td>Syed Muhammad Sajid Siraj</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="availability">12/42</td>
+                        <td class="center">2</td>
+                        <td>CSC4503 Introduction to Accounting (3,0)</td>
+                        <td>Abdur Rehman Baig</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="availability">21/42</td>
+                        <td class="center">3</td>
+                        <td>CSC4504 Organizational Behavior (3,0)</td>
+                        <td>Nausheen Ashraf</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="availability">29/42</td>
+                        <td class="center">4</td>
+                        <td>CSC4603 Management Principles (3,0)</td>
+                        <td>Tanzil Rehan Malik</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="availability">37/42</td>
+                        <td class="center">5</td>
+                        <td>CSC4703 Applied Data Mining (3,0)</td>
+                        <td>Murad Ali</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="availability">40/42</td>
+                        <td class="center">6</td>
+                        <td>CSC4721 Introduction to Cloud Computing (3,0)</td>
+                        <td>Owais Kazmi</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="availability">36/42</td>
+                        <td class="center">7</td>
+                        <td>CSC4722 Introduction to Blockchain Technology (3,0)</td>
+                        <td>Asif Khalid</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="availability">42/42</td>
+                        <td class="center">8</td>
+                        <td>CSC4724 User Interface Design (3,0)</td>
+                        <td>Ali Mobin Memon</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="availability">33/42</td>
+                        <td class="center">9</td>
+                        <td>CSC4802 Android Application Development (3,0)</td>
+                        <td>Daniyal Nawaz</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="availability">02/42</td>
+                        <td class="center">10</td>
+                        <td>CSC4814 Software Project Management (3,0)</td>
+                        <td>Naveel Arshad</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="availability">39/42</td>
+                        <td class="center">11</td>
+                        <td>CSC4816 Technopreneurship (3,0)</td>
+                        <td>Dr. Imran Amin</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="availability">41/42</td>
+                        <td class="center">12</td>
+                        <td>CSC4819 Graphic Design and 3D Animation (3,0)</td>
+                        <td>Faiz Alam</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="availability">42/42</td>
+                        <td class="center">13</td>
+                        <td>CSC4821 Online Presence (3,0)</td>
+                        <td>Marjan Sikandar</td>
+                        <td class="center">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <img class="img1" src="../assets/zabdesk.png" alt="zabsolutions">
+        <img class="img2" src="../assets/szabist.png" alt="szabist">
+        <ul>
+            <li><a class="navleft" href="index.html">Home |</a></li>
+            <li><a href="index.html">About |</a></li>
+            <li><a href="index.html">Feedback |</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="copyrights">
+        <p>Copyright © 2023 Zab Solutions. All rights reserved.</p>
+    </div>
+    
+</body>
+</html>
