@@ -1,13 +1,13 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'segoe UI';
 }
 
-body{
+body {
     margin: 0;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     margin-bottom: 0;
@@ -15,14 +15,14 @@ body{
 }
 
 
-.logo .zabdesk{
+.logo .zabdesk {
     width: 10%;
     height: 20%;
     margin: 1.3% 0 0 1%;
     cursor: pointer;
 }
 
-.logo .person{
+.logo .person {
     width: 4%;
     height: 4%;
     margin: 1.3% 1% 0 60%;
@@ -30,7 +30,8 @@ body{
     cursor: pointer;
 }
 
-.home, .sign-out{
+.home,
+.sign-out {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,34 +45,35 @@ body{
     border-radius: 5px;
 }
 
-.home:hover, .sign-out:hover{
+.home:hover,
+.sign-out:hover {
     background-color: rgb(174, 189, 189);
 }
 
-.navbar{
+.navbar {
     z-index: 1000;
 }
 
 
-.navbar li{
+.navbar li {
     float: left;
 }
 
-.navbar li a{
+.navbar li a {
     display: block;
     color: rgb(241, 233, 233);
-    text-align: center; 
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     position: relative;
     font-weight: 500;
 }
 
-.navbar li a:hover{
-    color: rgb(255, 255, 255)  ;
+.navbar li a:hover {
+    color: rgb(255, 255, 255);
 }
 
-.navbar li a::after{
+.navbar li a::after {
     content: '';
     height: 2.5px;
     width: 95%;
@@ -83,16 +85,12 @@ body{
     transition: all 0.2s;
 }
 
-.menu-toggle{
-    display: none;
-}
-
-.navbar li a:hover::after{
+.navbar li a:hover::after {
     opacity: 1;
 
 }
 
-.navbar ul{
+.navbar ul {
     list-style-type: none;
     margin: 10px 0 0 0;
     padding: 0;
@@ -101,7 +99,7 @@ body{
 }
 
 
-.navbar ul li ul{
+.navbar ul li ul {
     position: absolute;
     top: 21.7%;
     width: 15%;
@@ -111,36 +109,36 @@ body{
 
 }
 
-.navbar ul li ul li{
+.navbar ul li ul li {
     width: 100%;
     border-top: black;
 }
 
-.navbar ul li ul a{
+.navbar ul li ul a {
     color: black;
 }
 
-.navbar ul li ul a:hover{
+.navbar ul li ul a:hover {
     color: rgb(12 84 163);
 }
 
 
-.navbar ul li ul li{
+.navbar ul li ul li {
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
-.navbar ul li:hover > ul{
+.navbar ul li:hover>ul {
     display: initial;
 }
 
-.main{
+.main {
     display: flex;
     position: relative;
     margin: 1%;
 }
 
-.left{
+.left {
     width: 25%;
     height: 400px;
     background-color: rgb(217, 228, 228);
@@ -152,7 +150,7 @@ body{
     border-radius: 5px;
 }
 
-.left img{
+.left img {
     margin-top: 2%;
     width: 45%;
     border: 10px solid black;
@@ -160,11 +158,16 @@ body{
     cursor: pointer;
 }
 
-.left img:hover{
+.left img:hover {
     opacity: 80%;
 }
 
-#display_image{
+/* IMP */
+.menu-toggle {
+    display: none;
+}
+
+#display_image {
     width: 187px;
     height: 211px;
     /* border: 1px solid black; */
@@ -175,13 +178,8 @@ body{
 
 #image_input {
     display: none;
-    /* background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer; */
 }
+
 .upload-button {
     background-color: #d9e4e4;
     color: rgb(0, 0, 0);
@@ -195,25 +193,33 @@ body{
     background-color: #bcd2d2;
 }
 
-.left .upload{
+.left .upload {
     font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
     margin-top: 30px;
 }
 
-.left .upload:hover{
+.left .upload:hover {
     color: rgb(12 84 163);
     text-decoration: underline;
 }
 
 @keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 1;
+    }
 
-.left .admit-card{
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.left .admit-card {
     background-color: white;
     width: 90%;
     text-align: center;
@@ -222,17 +228,17 @@ body{
     border-radius: 5px;
 }
 
-.left .admit-card p{
+.left .admit-card p {
     animation: blink 2s infinite;
 }
 
-.left .admit-card:hover{
+.left .admit-card:hover {
     background-color: rgb(12 84 163);
     color: white;
     text-decoration: underline;
 }
 
-.right{
+.right {
     width: 72%;
     height: 800px;
     background-color: rgb(217, 228, 228);
@@ -240,7 +246,7 @@ body{
     overflow: auto;
 }
 
-.right .header{
+.right .header {
     background-color: rgb(12 84 163);
     text-align: center;
     color: white;
@@ -249,47 +255,47 @@ body{
     border-radius: 5px 5px 0 0;
 }
 
-.right .header h3{
+.right .header h3 {
     margin-bottom: 10px;
 }
 
-.pageTitle{
+.pageTitle {
     background-color: rgb(12 84 163);
     margin: 3.9%;
     width: 92%;
 }
 
-.pageTitle th{
+.pageTitle th {
     text-align: center;
     color: white;
     font-weight: 500;
     font-size: 0.9rem;
 }
 
-.studentSemesterHeader{
+.studentSemesterHeader {
     margin: 3% 4%;
     width: 92%;
     border-collapse: collapse;
     text-align: center;
 }
 
-.studentSemesterHeader td{
+.studentSemesterHeader td {
     border: 1px solid grey;
 }
 
-form{
+form {
     margin: 20px auto auto 34px;
     margin-left: 30px;
 }
 
-.main-table{
+.main-table {
     border-collapse: collapse;
     width: 95.5%;
     margin-left: 0.5%;
 
 }
 
-.main-table th{
+.main-table th {
     border: 1px solid rgb(255, 255, 255);
     padding: 0.5% 0;
     width: 40%;
@@ -299,11 +305,11 @@ form{
     background-color: rgb(12 84 163);
 }
 
-.main-table .last-field{
+.main-table .last-field {
     border-top: 1px solid grey;
 }
 
-.main-table td{
+.main-table td {
     border: 1px solid grey;
     padding-left: 10px;
     text-align: left;
@@ -311,24 +317,25 @@ form{
 }
 
 
-.main-table .inputs th{
+.main-table .inputs th {
     padding: 15px;
 }
 
 
-.main-table select, input{
+.main-table select,
+input {
     padding: 7px 25px 7px 2px;
     margin-left: 0;
 }
 
 
-.right .buttons{
+.right .buttons {
     display: flex;
     justify-content: center;
     margin: 5% 0;
 }
 
-.right .buttons input{
+.right .buttons input {
     padding: 1.5% 8%;
     border: 0.5px solid grey;
     border-radius: 3px;
@@ -336,17 +343,17 @@ form{
     cursor: pointer;
 }
 
-.right .buttons input:hover{
+.right .buttons input:hover {
     background-color: rgb(12 84 163);
     color: white;
 }
 
-.right .buttons .submit{
+.right .buttons .submit {
     margin: 0 5%;
 }
 
 
- .footer{
+.footer {
     margin-top: 5%;
     background-color: rgb(233, 236, 238);
     padding-top: 4%;
@@ -354,32 +361,32 @@ form{
 }
 
 
-.img1{
+.img1 {
     width: 15%;
     border: 1px solid grey;
     padding: 1%;
     margin-left: 3%;
 }
 
-.img2{
+.img2 {
     width: 12%;
     margin-left: 65%;
     border: 1px solid grey;
     padding: 1%;
 }
 
-.footer ul{
+.footer ul {
     text-align: center;
 }
 
-.footer li{
+.footer li {
     list-style-type: none;
     display: inline-block;
     text-align: center;
     margin-top: 5%;
 }
 
-.footer li a{
+.footer li a {
     color: rgb(0, 0, 0);
     padding: 14px 2px;
     text-decoration: none;
@@ -387,17 +394,17 @@ form{
     font-weight: 500;
 }
 
-.footer li a:hover{
+.footer li a:hover {
     color: rgb(12 84 163);
 }
 
-.copyrights{
+.copyrights {
     background-color: rgb(12 84 163);
     color: white;
     text-align: center;
 }
 
-.copyrights p{
+.copyrights p {
     margin: 0;
     padding: 1%;
 }
@@ -423,7 +430,8 @@ form{
         left: 25%;
         right: 25%;
     }
-    .main{
+
+    .main {
         display: block;
     }
 
@@ -439,25 +447,26 @@ form{
         margin-top: 40px;
     }
 
-    .home, .sign-out{
+    .home,
+    .sign-out {
         display: none;
     }
 
     .menu-toggle {
         display: block;
-      }
-    
-      .menu {
+    }
+
+    .menu {
         display: none;
         list-style-type: none;
         padding: 0;
-      }
-    
-      .menu-toggle input {
+    }
+
+    .menu-toggle input {
         display: none;
-      }
-    
-      .menu-toggle .hamburger {
+    }
+
+    .menu-toggle .hamburger {
         display: block;
         width: 25px;
         height: 2px;
@@ -465,65 +474,66 @@ form{
         position: relative;
         cursor: pointer;
         margin: 15px;
-      }
-    
-      .menu-toggle .hamburger span {
+    }
+
+    .menu-toggle .hamburger span {
         position: absolute;
         width: 100%;
         height: 2px;
         background-color: #333;
         transition: transform 0.3s ease;
-      }
-    
-      .menu-toggle .hamburger span:before,
-      .menu-toggle .hamburger span:after {
+    }
+
+    .menu-toggle .hamburger span:before,
+    .menu-toggle .hamburger span:after {
         content: "";
         position: absolute;
         width: 100%;
         height: 2px;
         background-color: #333;
         transition: transform 0.3s ease;
-      }
-    
-      .menu-toggle .hamburger span:before {
+    }
+
+    .menu-toggle .hamburger span:before {
         top: -8px;
-      }
-    
-      .menu-toggle .hamburger span:after {
+    }
+
+    .menu-toggle .hamburger span:after {
         top: 8px;
-      }
-    
-      .menu-toggle input:checked ~ .hamburger span {
+    }
+
+    .menu-toggle input:checked~.hamburger span {
         transform: rotate(45deg);
-      }
-    
-      .menu-toggle input:checked ~ .hamburger span:before {
+    }
+
+    .menu-toggle input:checked~.hamburger span:before {
         transform: translateY(8px) rotate(90deg);
-      }
-    
-      .menu-toggle input:checked ~ .hamburger span:after {
+    }
+
+    .menu-toggle input:checked~.hamburger span:after {
         transform: translateY(-8px) rotate(90deg);
-      }
-    
-      .menu-toggle input:checked ~ .menu {
+    }
+
+    .menu-toggle input:checked~.menu {
         display: grid;
         justify-content: center;
         justify-items: center;
-      }
-    
-      .menu li {
+    }
+
+    .menu li {
         text-align: center;
         margin-top: 10px;
-      }
-    
-      .menu a {
+    }
+
+    .menu a {
         display: block;
         text-decoration: none;
         color: #333;
         font-weight: bold;
         padding: 5px;
-      }
-      .desktop-nav{
+    }
+
+    .desktop-nav {
         display: none;
     }
 
@@ -535,30 +545,26 @@ form{
         padding: 0;
         list-style: none;
         z-index: 1;
-      }
-      
-      .dropdown li {
+    }
+
+    .dropdown li {
         padding: 10px;
-      }
-      
-      .dropdown li a {
+    }
+
+    .dropdown li a {
         color: #333;
         text-decoration: none;
-      }
-      
-      /* Show the dropdown menu when hovering over the parent item */
-      .menu li:hover .dropdown {
+    }
+
+    /* Show the dropdown menu when hovering over the parent item */
+    .menu li:hover .dropdown {
         display: block;
-      }
-      
-      /* Show the dropdown menu when the parent item is clicked */
-      .menu li:focus-within .dropdown {
+    }
+
+    /* Show the dropdown menu when the parent item is clicked */
+    .menu li:focus-within .dropdown {
         display: block;
-      }
+    }
 
 
 }
-
-
-
-

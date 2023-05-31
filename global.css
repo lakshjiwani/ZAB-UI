@@ -1,15 +1,15 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'segoe UI';
     scroll-behavior: smooth;
 }
 
 
-body{
+body {
     margin: 0;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     margin-bottom: 0;
@@ -17,14 +17,14 @@ body{
 }
 
 
-.logo .zabdesk{
+.logo .zabdesk {
     width: 10%;
     height: 20%;
     margin: 1.3% 0 0 1%;
     cursor: pointer;
 }
 
-.logo .person{
+.logo .person {
     width: 4%;
     height: 4%;
     margin: 1.3% 1% 0 60%;
@@ -32,7 +32,8 @@ body{
     cursor: pointer;
 }
 
-.home, .sign-out{
+.home,
+.sign-out {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,34 +47,35 @@ body{
     border-radius: 5px;
 }
 
-.home:hover, .sign-out:hover{
+.home:hover,
+.sign-out:hover {
     background-color: rgb(174, 189, 189);
 }
 
-.navbar{
+.navbar {
     z-index: 1000;
 }
 
 
-.navbar li{
+.navbar li {
     float: left;
 }
 
-.navbar li a{
+.navbar li a {
     display: block;
     color: rgb(241, 233, 233);
-    text-align: center; 
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     position: relative;
     font-weight: 500;
 }
 
-.navbar li a:hover{
-    color: rgb(255, 255, 255)  ;
+.navbar li a:hover {
+    color: rgb(255, 255, 255);
 }
 
-.navbar li a::after{
+.navbar li a::after {
     content: '';
     height: 2.5px;
     width: 95%;
@@ -85,12 +87,12 @@ body{
     transition: all 0.2s;
 }
 
-.navbar li a:hover::after{
+.navbar li a:hover::after {
     opacity: 1;
 
 }
 
-.navbar ul{
+.navbar ul {
     list-style-type: none;
     margin: 10px 0 0 0;
     padding: 0;
@@ -99,7 +101,7 @@ body{
 }
 
 
-.navbar ul li ul{
+.navbar ul li ul {
     position: absolute;
     top: 21.7%;
     width: 15%;
@@ -109,36 +111,36 @@ body{
 
 }
 
-.navbar ul li ul li{
+.navbar ul li ul li {
     width: 100%;
     border-top: black;
 }
 
-.navbar ul li ul a{
+.navbar ul li ul a {
     color: black;
 }
 
-.navbar ul li ul a:hover{
+.navbar ul li ul a:hover {
     color: rgb(12 84 163);
 }
 
 
-.navbar ul li ul li{
+.navbar ul li ul li {
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
-.navbar ul li:hover > ul{
+.navbar ul li:hover>ul {
     display: initial;
 }
 
-.main{
+.main {
     display: flex;
     position: relative;
     margin: 1%;
 }
 
-.left{
+.left {
     width: 25%;
     height: 400px;
     background-color: rgb(217, 228, 228);
@@ -150,7 +152,7 @@ body{
     border-radius: 5px;
 }
 
-.left img{
+.left img {
     margin-top: 2%;
     width: 45%;
     border: 10px solid black;
@@ -158,29 +160,69 @@ body{
     cursor: pointer;
 }
 
-.left img:hover{
+#display_image {
+    width: 187px;
+    height: 211px;
+    /* border: 1px solid black; */
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#image_input {
+    display: none;
+    /* background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; */
+}
+
+.upload-button {
+    background-color: #d9e4e4;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-button:hover {
+    background-color: #bcd2d2;
+}
+
+.left img:hover {
     opacity: 80%;
 }
 
-.left .upload{
+.left .upload {
     font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
     margin-top: 30px;
 }
 
-.left .upload:hover{
+.left .upload:hover {
     color: rgb(12 84 163);
     text-decoration: underline;
 }
 
 @keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 1;
+    }
 
-.left .admit-card{
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.left .admit-card {
     background-color: white;
     padding: 0 20px;
     margin-top: 7%;
@@ -188,18 +230,18 @@ body{
     border-radius: 5px;
 }
 
-.left .admit-card p{
+.left .admit-card p {
     animation: blink 2s infinite;
 }
 
-.left .admit-card:hover{
+.left .admit-card:hover {
     background-color: rgb(12 84 163);
     color: white;
     text-decoration: underline;
 }
 
 
-.right{
+.right {
     width: 72%;
     height: 800px;
     background-color: rgb(217, 228, 228);
@@ -207,7 +249,7 @@ body{
     overflow: auto;
 }
 
-.right .header{
+.right .header {
     background-color: rgb(12 84 163);
     text-align: center;
     color: white;
@@ -216,38 +258,38 @@ body{
     border-radius: 5px 5px 0 0;
 }
 
-.right .header h3{
+.right .header h3 {
     margin-bottom: 10px;
 }
 
-.pageTitle{
+.pageTitle {
     background-color: rgb(12 84 163);
     margin: 3.9%;
     width: 92%;
 }
 
-.pageTitle th{
+.pageTitle th {
     text-align: center;
     color: white;
     font-weight: 500;
     font-size: 0.9rem;
 }
 
-.studentSemesterHeader{
+.studentSemesterHeader {
     margin: 4% auto;
     width: 92%;
     border-collapse: collapse;
     text-align: center;
 }
 
-.studentSemesterHeader td{
+.studentSemesterHeader td {
     border: 1px solid grey;
 }
 
 /* Footer */
 
 
-.footer{
+.footer {
     margin-top: 5%;
     background-color: rgb(233, 236, 238);
     padding-top: 4%;
@@ -255,32 +297,32 @@ body{
 }
 
 
-.img1{
+.img1 {
     width: 15%;
     border: 1px solid grey;
     padding: 1%;
     margin-left: 3%;
 }
 
-.img2{
+.img2 {
     width: 12%;
     margin-left: 65%;
     border: 1px solid grey;
     padding: 1%;
 }
 
-.footer ul{
+.footer ul {
     text-align: center;
     padding-left: 0;
 }
 
-.footer li{
+.footer li {
     list-style-type: none;
     display: inline-block;
     margin-top: 5%;
 }
 
-.footer li a{
+.footer li a {
     color: rgb(0, 0, 0);
     padding: 14px 1px;
     text-decoration: none;
@@ -288,17 +330,181 @@ body{
     font-weight: 500;
 }
 
-.footer li a:hover{
+.footer li a:hover {
     color: rgb(12 84 163);
 }
 
-.copyrights{
+.copyrights {
     background-color: rgb(12 84 163);
     color: white;
     text-align: center;
 }
 
-.copyrights p{
+.copyrights p {
     margin: 0;
     padding: 1%;
+}
+
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .logo .zabdesk {
+        width: 25%;
+        height: 30%;
+        margin: 1.3% 0 0 1%;
+    }
+
+    .logo .person {
+        /* width: 6%;
+        height: 6%;
+        margin: 1.3% 1% 0 55%; */
+        display: none;
+    }
+
+    .navbar ul li ul {
+        top: 31%;
+        width: 50%;
+        left: 25%;
+        right: 25%;
+    }
+
+    .main {
+        display: block;
+    }
+
+    .left {
+        width: 40%;
+        position: relative;
+        left: 30%;
+        margin-top: 40px;
+    }
+
+    .right {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .home,
+    .sign-out {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .menu-toggle input {
+        display: none;
+    }
+
+    .menu-toggle .hamburger {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: #333;
+        position: relative;
+        cursor: pointer;
+        margin: 15px;
+    }
+
+    .menu-toggle .hamburger span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-toggle .hamburger span:before,
+    .menu-toggle .hamburger span:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-toggle .hamburger span:before {
+        top: -8px;
+    }
+
+    .menu-toggle .hamburger span:after {
+        top: 8px;
+    }
+
+    .menu-toggle input:checked~.hamburger span {
+        transform: rotate(45deg);
+    }
+
+    .menu-toggle input:checked~.hamburger span:before {
+        transform: translateY(8px) rotate(90deg);
+    }
+
+    .menu-toggle input:checked~.hamburger span:after {
+        transform: translateY(-8px) rotate(90deg);
+    }
+
+    .menu-toggle input:checked~.menu {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .menu li {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .menu a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 0;
+        list-style: none;
+        z-index: 1;
+    }
+
+    .dropdown li {
+        padding: 10px;
+    }
+
+    .dropdown li a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    /* Show the dropdown menu when hovering over the parent item */
+    .menu li:hover .dropdown {
+        display: block;
+    }
+
+    /* Show the dropdown menu when the parent item is clicked */
+    .menu li:focus-within .dropdown {
+        display: block;
+    }
+
+
 }
