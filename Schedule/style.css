@@ -1,0 +1,36 @@
+
+.schedule{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    width: 92%;
+    margin: 5% 3.8%;
+    text-align: center;
+}
+
+.schedule th{
+    border: 1px solid gray;
+    background-color: rgb(12 84 163);
+    color: #fff;
+    font-weight: 500;
+    padding: 0.7% 0;
+
+}
+
+.schedule td{
+    border: 1px solid gray;
+    background-color: #fff;
+    font-size: 0.9rem;
+    padding: 1%;
+}
+
+.schedule .faculty{
+    text-align: left;
+}
+
+.scheduled{
+    color: rgb(12 84 163);
+}
+
+.cancelled{
+    color: rgb(238, 14, 14);
+}
