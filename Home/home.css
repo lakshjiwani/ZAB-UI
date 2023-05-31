@@ -250,7 +250,6 @@ iframe {
     height: 800px;
     background-color: rgb(217, 228, 228);
     border-radius: 5px;
-    overflow: auto;
 }
 
 .right .header {
