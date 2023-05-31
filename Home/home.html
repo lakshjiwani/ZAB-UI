@@ -15,51 +15,112 @@
         <a class="sign-out" href="../Login/index.html">Sign Out</a>
     </div>
     <div class="navbar">
-        <ul>
-            <li><a class="leftnav" href="../Home/home.html">Home</a></li>
-            <li><a href="javascript:void(0)">Courses</a>
-                <ul>
-                    <li><a href="javascript:void(0)">View Offered Courses</a></li>
-                    <li><a href="javascript:void(0)">Course Registration</a></li>
-                    <li><a href="../Current Sem/currentsemester.html">Current Semester</a></li>
-                    <li><a href="../Previous Sem/previoussem.html">Previous Semesters</a></li>
-                    <li><a href="javascript:void(0)">Printing Report</a></li>
-                    <li><a href="javascript:void(0)">Course Withdrawal</a></li>
-                    <li><a href="javascript:void(0)">Semester Result</a></li>
-                    <li><a href="javascript:void(0)">Course Improvement</a></li>
-                </ul>
-            </li>
-            <li><a href="javascript:void(0)">Class Schedule</a>
-                <ul>
-                    <li><a href="javascript:void(0)">Current Week Schedule</a></li>
-                    <li><a href="javascript:void(0)">Advance Week Schedule</a></li>
-                    <li><a href="javascript:void(0)">Class Schedule</a></li>
-                    <li><a href="javascript:void(0)">Exam Schedule</a></li>
-                    <li><a href="javascript:void(0)">Daily Class Schedule</a></li>
-                </ul>
-            </li>
-            <li><a href="javascript:void(0)">Library</a>
-                <ul>
-                    <li><a href="javascript:void(0)">Library Books Issued</a></li>
-                    <li><a href="javascript:void(0)">Library Card Request</a></li>
-                </ul>
-            </li>
-            <li><a href=javascript:void(0)>My Account</a>
-                <ul>
-                    <li><a href="javascript:void(0)">Change Password</a></li>
-                    <li><a href="javascript:void(0)">Profile Documents</a></li>
-                    <li><a href="javascript:void(0)">ID Card Request</a></li>
-                    <li><a href="javascript:void(0)">Change Profile Request</a></li>
-                </ul>
-            </li>
-            <li><a href="javascript:void(0)">Submit Internship Report</a></li>
-        </ul>
+        <div class="menu-toggle">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+    
+            <ul class="menu">
+                <li><a class="leftnav" href="../Home/home.html">Home</a></li>
+                <li>
+                    <a href="javascript:void(0)">Courses</a>
+                    <ul class="dropdown">
+                        <li><a href="javascript:void(0)">View Offered Courses</a></li>
+                        <li><a href="javascript:void(0)">Course Registration</a></li>
+                        <li><a href="../Current Sem/currentsemester.html">Current Semester</a></li>
+                        <li><a href="../Previous Sem/previoussem.html">Previous Semesters</a></li>
+                        <li><a href="javascript:void(0)">Printing Report</a></li>
+                        <li><a href="javascript:void(0)">Course Withdrawal</a></li>
+                        <li><a href="javascript:void(0)">Semester Result</a></li>
+                        <li><a href="javascript:void(0)">Course Improvement</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">Class Schedule</a>
+                    <ul class="dropdown">
+                        <li><a href="javascript:void(0)">Current Week Schedule</a></li>
+                        <li><a href="javascript:void(0)">Advance Week Schedule</a></li>
+                        <li><a href="javascript:void(0)">Class Schedule</a></li>
+                        <li><a href="javascript:void(0)">Exam Schedule</a></li>
+                        <li><a href="javascript:void(0)">Daily Class Schedule</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">Library</a>
+                    <ul class="dropdown">
+                        <li><a href="javascript:void(0)">Library Books Issued</a></li>
+                        <li><a href="javascript:void(0)">Library Card Request</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">My Account</a>
+                    <ul class="dropdown">
+                        <li><a href="javascript:void(0)">Change Password</a></li>
+                        <li><a href="javascript:void(0)">Profile Documents</a></li>
+                        <li><a href="javascript:void(0)">ID Card Request</a></li>
+                        <li><a href="javascript:void(0)">Change Profile Request</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">Submit Internship Report</a></li>
+                <li><a href="javascript:void(0)">Sign Out</a></li>
+            </ul>
+        </div>
+
+
+        <div class="desktop-nav">
+            <ul>
+                <li><a class="leftnav" href="../Home/home.html">Home</a></li>
+                <li><a href="javascript:void(0)">Courses</a>
+                    <ul>
+                        <li><a href="javascript:void(0)">View Offered Courses</a></li>
+                        <li><a href="javascript:void(0)">Course Registration</a></li>
+                        <li><a href="../Current Sem/currentsemester.html">Current Semester</a></li>
+                        <li><a href="../Previous Sem/previoussem.html">Previous Semesters</a></li>
+                        <li><a href="javascript:void(0)">Printing Report</a></li>
+                        <li><a href="javascript:void(0)">Course Withdrawal</a></li>
+                        <li><a href="javascript:void(0)">Semester Result</a></li>
+                        <li><a href="javascript:void(0)">Course Improvement</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">Class Schedule</a>
+                    <ul>
+                        <li><a href="javascript:void(0)">Current Week Schedule</a></li>
+                        <li><a href="javascript:void(0)">Advance Week Schedule</a></li>
+                        <li><a href="javascript:void(0)">Class Schedule</a></li>
+                        <li><a href="javascript:void(0)">Exam Schedule</a></li>
+                        <li><a href="javascript:void(0)">Daily Class Schedule</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">Library</a>
+                    <ul>
+                        <li><a href="javascript:void(0)">Library Books Issued</a></li>
+                        <li><a href="javascript:void(0)">Library Card Request</a></li>
+                    </ul>
+                </li>
+                <li><a href=javascript:void(0)>My Account</a>
+                    <ul>
+                        <li><a href="javascript:void(0)">Change Password</a></li>
+                        <li><a href="javascript:void(0)">Profile Documents</a></li>
+                        <li><a href="javascript:void(0)">ID Card Request</a></li>
+                        <li><a href="javascript:void(0)">Change Profile Request</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">Submit Internship Report</a></li>
+            </ul>
+        </div>
     </div>
+
 
     <div class="main">
         <div class="left">
-                <img class="pic" src="../assets/person.png" alt="person"> 
-            <p class="upload">Upload Picture</p>
+                <!-- <img class="pic" src="../assets/person.png" alt="person">  -->
+            <!-- <p class="upload">Upload Picture</p> -->
+            <div id="display_image"></div>
+            <input type="file" id="image_input" accept="image/png, image/jpg">
+            <label for="image_input" class="upload-button">Upload Picture</label>
             <div class="admit-card">
                 <a href="#"><p>Click here to print your Admit Card.</p></a>
             </div>
