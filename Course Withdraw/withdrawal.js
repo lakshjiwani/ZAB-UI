@@ -5,35 +5,14 @@ var uploaded_image = "";
 const toggle = document.getElementById('toggle');
 const menu = document.querySelector('.menu');
 
-toggle.addEventListener('change', function () {
-    menu.style.display = this.checked ? 'grid' : 'none';
-});
 
-image_input.addEventListener("change", function () {
-    const reader = new FileReader();
-    reader.addEventListener("load", () => {
-        uploaded_image = reader.result;
-        document.querySelector('#display_image').style.backgroundImage = `url(${uploaded_image})`;
-    });
-
-    reader.readAsDataURL(this.files[0]);
-});
-
-function withdrawCourses() {
+function registerCourses() {
     // Your code for handling individual checkbox registration
 }
 
 document.addEventListener("DOMContentLoaded", function () {
     var submitButton = document.getElementById("submitButton");
     var resetButton = document.getElementById("resetButton");
-
-    submitButton.addEventListener("click", function () {
-        var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-
-        if (checkboxes.length > 0) {
-            alert("Request for course withdrawal submitted successfully!");
-        }
-    });
 
     resetButton.addEventListener("click", function () {
         var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
@@ -43,6 +22,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    withdrawCourses();
+    submitButton.addEventListener("click", function () {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+
+        if (checkboxes.length > 0) {
+            alert("Course withdrawn request successfull!");
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = false;
+            });
+        }
+    });
+
+    registerCourses();
 });
+
 
