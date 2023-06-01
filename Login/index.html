@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZABDESK</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
@@ -14,65 +16,40 @@
     <div class="logo">
         <img src="../assets/zabdesk.png" alt="ZABDESK">
     </div>
-    <div class="navbar">
-        <div class="menu-toggle">
-            <input type="checkbox" id="toggle">
-            <label for="toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="desktop-nav">
-            <ul>
-                <li><a class="leftnav" href="index.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html">Teaching's Evaluation</a></li>
-                <li><a href="index.html">EDC Job Portal</a></li>
-                <li><a href="index.html">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
     <div class="main">
         <div class="login">
+
             <div class="header">
-                <h3>LOG IN</h3>
+                <h3>Log In</h3>
             </div>
-            <p>Students and staff can log in to their respective portals.</p>
+            <p>Enter your details to sign in as student or staff</p>
             <form>
                 <div class="regno">
-                    <label for="regno">Registration Number</label>
-                    <input id="regnumber" type="number" placeholder="Type your Registration Number here." required>
+                    <input id="regnumber" type="number" placeholder="Enter Your Registration No." required>
                 </div>
                 <div class="password">
-                    <label for="password">Password</label>
-                    <input id="pass" type="password" placeholder="Type your Password here." required>
+                    <input id="pass" type="password" placeholder="Enter Your Password" required>
+                    <span id="pass-eye" class="fa fa-fw fa-eye field-icon toggle-password"
+                        onclick="passToggle()"></span>
                 </div>
                 <div class="campus">
-                    <label for="campus">Campus</label>
-                    <input type="text" placeholder="Karachi" readonly>
+                    <input type="text" placeholder="Campus-Karachi" readonly>
                 </div>
                 <div class="button">
                     <input type="submit" value="Log In" onclick="redirect()">
                 </div>
             </form>
             <div class="forgotpassword">
-                <label for="pass">Forgot Password?</label>
+                <label for="pass">Having trouble in sign in?</label>
                 <a href="#">Click here</a>
             </div>
         </div>
         <div class="noticeboard">
             <div class="header2">
-                <h3>NOTICE BOARD</h3>
+                <h3>Notice Board</h3>
             </div>
             <div class="notice one">
+
                 <h4>Lorem Ipsum</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sit ab a nostrum tenetur libero
                     laboriosam nam.</p>
@@ -89,17 +66,6 @@
             </div>
 
         </div>
-    </div>
-    </div>
-    <div class="footer">
-        <img class="img1" src="../assets/zabdesk.png" alt="zabsolutions">
-        <img class="img2" src="../assets/szabist.png" alt="szabist">
-        <ul>
-            <li><a class="navleft" href="index.html">Home |</a></li>
-            <li><a href="index.html">About |</a></li>
-            <li><a href="index.html">Feedback |</a></li>
-            <li><a href="index.html">Contact Us</a></li>
-        </ul>
     </div>
     <div class="copyrights">
         <p>Copyright © 2023 Zab Solutions. All rights reserved.</p>

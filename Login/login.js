@@ -1,6 +1,7 @@
 var regno = document.getElementById("regnumber");
 var password = document.getElementById("pass");
 
+
 function validateForm() {
     // // Validating regNumber
     // if(isNaN(regno.value)){
@@ -32,6 +33,18 @@ function redirect() {
     }
     else {
         console.log("Cannot redirect");
+    }
+}
+
+function passToggle() {
+    var element = document.getElementById("pass-eye");
+
+    if (password.type === "password") {
+        password.type = "text";
+        element.classList.add('fa-eye-slash');
+    } else {
+        password.type = "password";
+        element.classList.remove('fa-eye-slash');
     }
 }
 
