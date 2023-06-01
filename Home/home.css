@@ -173,12 +173,12 @@ iframe {
 }
 
 #display_image {
-    width: 187px;
-    height: 211px;
-    /* border: 1px solid black; */
+    width: 180px;
+    height: 200px;
+    border: 4px solid black;
     background-position: center;
     background-size: cover;
-    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 #image_input {
