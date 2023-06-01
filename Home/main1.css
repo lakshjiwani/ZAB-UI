@@ -11,9 +11,10 @@ body {
 
 }
 
+/* 
 .center {
     background-color: #f7f7f7;
-}
+} */
 
 .top {
     height: 33.33%;
@@ -61,8 +62,13 @@ body {
     margin-left: 5%;
     height: 33.33%;
     width: 90%;
-    border: 1px solid black;
+    box-shadow: 3px 3px #888888;
     border-radius: 30px;
+    background-color: white;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding-left: 20px;
+    padding-top: 2%;
 }
 
 .heading {
@@ -86,20 +92,55 @@ body {
     display: inline-block; */
 }
 
+.middle .heading {
+    border: none;
+    background: white;
+}
+
 .assignment {
     float: left;
     width: 25%;
     height: 60%;
-    background-color: rgb(255, 255, 255);
+    background-color: #f6f8fa;
     border-radius: 20px;
     justify-content: center;
     margin: 25px;
     margin-left: 50px;
+    text-align: center;
+}
+
+.result {
+    float: left;
+    width: 25%;
+    height: 60%;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 20px;
+    justify-content: center;
+    margin: 25px;
+    margin-left: 50px;
+    text-align: center;
 }
 
 .bottom {
+    margin-left: 5%;
     height: 33.33%;
-    width: 100%;
-    border: 1px solid black;
+    width: 90%;
+    box-shadow: 3px 3px #888888;
     border-radius: 30px;
+    background-color: white;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding-left: 20px;
+    padding-top: 2%;
+}
+
+.result {
+    position: relative;
+}
+
+.result img {
+    width: 65%;
+    position: absolute;
+    left: 48px;
+    top: 18px;
 }
