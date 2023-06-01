@@ -47,7 +47,7 @@ function redirect() {
     passValue();
     event.preventDefault()
     if (validateForm() && checkUser()) {
-        window.location.assign("../Home/home.html");
+        window.location.assign("../New Home/newhome.html");
     }
     else {
         alert("Cannot redirect");

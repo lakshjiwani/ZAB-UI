@@ -98,6 +98,7 @@ body {
 }
 
 .assignment {
+    position: relative;
     float: left;
     width: 25%;
     height: 60%;
@@ -107,6 +108,16 @@ body {
     margin: 25px;
     margin-left: 50px;
     text-align: center;
+}
+
+.new {
+    position: absolute;
+    left: -15px;
+    top: -10px;
+}
+
+.assignment img {
+    width: 38px;
 }
 
 .result {
