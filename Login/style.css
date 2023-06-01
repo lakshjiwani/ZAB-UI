@@ -353,4 +353,9 @@ form input[type='submit']:hover {
         font-weight: bold;
         padding: 5px;
     }
+
+
+    .field-icon{
+        visibility: hidden;
+    }
 }
