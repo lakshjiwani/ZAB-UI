@@ -27,6 +27,10 @@
     padding: 0.3% 0;
 }
 
+.cgpa td, .semester-result td, .semester-result td{
+    border: 1px solid grey;
+}
+
 #last{
     margin-bottom: 2%;
 }
