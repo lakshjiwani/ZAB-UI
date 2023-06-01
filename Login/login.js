@@ -1,38 +1,55 @@
 var regno = document.getElementById("regnumber");
 var password = document.getElementById("pass");
 
+const user = { regNo: 2012269, password: "Sameer123" }
 
 function validateForm() {
-    // // Validating regNumber
-    // if (isNaN(regno.value)) {
-    //     console.error("Registration number must be a Integer.");
-    //     return false;
-    // }
+    // Validating regNumber
+    if (isNaN(regno.value)) {
+        alert("Registration number must be a Integer.");
+        return false;
+    }
 
-    // if (regno.value.length !== 7) {
-    //     console.error("Registration number must be a 7-digit number.");
-    //     return false;
-    // }
+    if (regno.value.length !== 7) {
+        alert("Registration number must be a 7-digit number.");
+        return false;
+    }
 
-    // // Validating password
-    // if (password.value.length < 8) {
-    //     console.error("Password must be 8 characters long");
-    //     return false;
-    // }
+    // Validating password
+    if (password.value.length < 8) {
+        alert("Password must be 8 characters long");
+        return false;
+    }
 
-    // // printing input values on console
-    // console.log("Registration Number: " + regno.value);
-    // console.log("Password: " + password.value);
+    // printing input values on console
+    console.log("Registration Number: " + regno.value);
+    console.log("Password: " + password.value);
+
+    return true;
+}
+
+const checkUser = () => {
+
+    if (+regno.value !== user.regNo) {
+        alert("User not found")
+        return false;
+    }
+
+    if (password.value !== user.password) {
+        alert(`Invalid password for user ${regno.value}`)
+        return false;
+    }
 
     return true;
 }
 
 function redirect() {
-    if (validateForm() == true) {
+    event.preventDefault()
+    if (validateForm() && checkUser()) {
         window.location.assign("../Home/home.html");
     }
     else {
-        console.log("Cannot redirect");
+        alert("Cannot redirect");
     }
 }
 
