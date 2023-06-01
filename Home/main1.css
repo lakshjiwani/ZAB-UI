@@ -7,6 +7,8 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    background-color: #f7f7f7;
+
 }
 
 .center {
@@ -17,10 +19,28 @@ body {
     height: 33.33%;
     margin-left: 5%;
     width: 90%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-shadow: 3px 3px #888888;
     border-radius: 30px;
     display: flex;
-    /* background-color: white; */
+    background-color: white;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding-left: 20px;
+    padding-top: 2%;
+
+}
+
+.goalButton {
+    height: 40px;
+    width: 160px;
+    background: #ffc100;
+    border: none;
+    border-radius: 25px;
+    color: #f7f7f7;
+    margin-left: 10px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .left {
@@ -33,7 +53,7 @@ body {
 .right img {
     position: absolute;
     left: 75%;
-    top: 5%;
+    top: 10%;
     width: 13%;
 }
 
@@ -43,6 +63,38 @@ body {
     width: 90%;
     border: 1px solid black;
     border-radius: 30px;
+}
+
+.heading {
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+
+.heading h2 {
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.heading a {
+    position: absolute;
+    left: 86%;
+    top: 36%;
+}
+
+.content {
+    /* display: flex;
+    display: inline-block; */
+}
+
+.assignment {
+    float: left;
+    width: 25%;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    justify-content: center;
+    margin: 25px;
+    margin-left: 50px;
 }
 
 .bottom {
