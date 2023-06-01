@@ -44,6 +44,7 @@ const checkUser = () => {
 }
 
 function redirect() {
+    passValue();
     event.preventDefault()
     if (validateForm() && checkUser()) {
         window.location.assign("../Home/home.html");
@@ -63,6 +64,11 @@ function passToggle() {
         password.type = "password";
         element.classList.remove('fa-eye-slash');
     }
+}
+
+function passValue() {
+    localStorage.setItem("regnumber", regno.value);
+    return false;
 }
 
 //Close the menu when a link is clicked

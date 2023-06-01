@@ -1,6 +1,8 @@
 const image_input = document.querySelector('#image_input');
 var uploaded_image = "";
 
+document.getElementById("regNumber").innerHTML = localStorage.getItem("regnumber");
+
 // JavaScript code to handle dropdown functionality
 const toggle = document.getElementById('toggle');
 const menu = document.querySelector('.menu');
